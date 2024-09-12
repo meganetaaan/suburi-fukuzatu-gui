@@ -1,18 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
-</head>
-
-<body>
-  <div class="container">
-    <h1>Title</h1>
-  </div>
-
-  <script type="module" src="./src/main.mts"></script>
-</body>
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Canvas Zoom and Scroll</title>
+        <style>
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Canvas Zoom and Scroll</h1>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div>
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+            <button id="scrollLeft">Scroll Left</button>
+            <button id="scrollRight">Scroll Right</button>
+            <button id="scrollUp">Scroll Up</button>
+            <button id="scrollDown">Scroll Down</button>
+        </div>
+        <script type="module" src="/src/main.mts"></script>
+    </body>
 </html>
